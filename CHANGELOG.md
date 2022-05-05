@@ -21,6 +21,7 @@
 - MultiChain JEWEL ([b75aa75](https://github.com/synapsecns/sdk/commits/b75aa75a84842a2626103ce00355b8fd046f98c3))
 - USD Balance (USDB) ([8354607](https://github.com/synapsecns/sdk/commits/835460717f9934fceea8bfc6277d61d2d31946b1))
 - Vesta (VSTA) ([5101623](https://github.com/synapsecns/sdk/commits/5101623f52770651fa729a328ea7a84ccca64221))
+- Gaia's Tears ([4d30ee5](https://github.com/synapsecns/sdk/commits/4d30ee5b7f8c967d6b368176d4d859c55ef19a8c))
 
 ### New addresses for existing tokens
 
@@ -49,6 +50,8 @@
   - implement connection "cacheing" (more like reuse) for connections to contracts such as `SynapseBridge`, `L2BridgeZap`, etc. ([7359c56](https://github.com/synapsecns/sdk/commits/7359c56e63822942ee1d4dfafc22d8373ddf9f10))
 - tokens
   - Add `gasTokenForChain` function to `Tokens` namespace, which returns the native currency token object for the passed Chain ID -- if it exists. ([7d9b47d](https://github.com/synapsecns/sdk/commits/7d9b47d6f5f1c02ed4b2dd59529c77115228ff44))
+- token
+  - Add `hash` property to `Token` interface. `hash` is unique to an individual Token instance and can be used for uniqueness checks. Closes #111 ([28846fc](https://github.com/synapsecns/sdk/commits/28846fc6db39bb0cba1a0009d7f9cbac880261f5))
 
 - chainid
   - Implement function for checking if a (known) Chain ID supports EIP-1559 ([5aa1535](https://github.com/synapsecns/sdk/commits/5aa1535e0221e28662306a7e6440a49a82ec152d))
